@@ -1,2 +1,12 @@
 # recipe-meal-planning-manager
-A web-based meal planning and recipe management system that helps users organize recipes, plan weekly meals, generate shopping lists, and track favorite ingredients and meal trends. Built with Salesforce concepts using custom objects, flows, and dashboards.
+The Recipe & Meal Planning Manager is designed to simplify meal organization for individuals. Users can:
+
+Add and categorize recipes with ingredients, instructions, and preparation time
+
+Plan weekly meals and assign recipes to specific days
+
+Automatically generate a shopping list for all planned meals
+
+Track trends such as most-used recipes and popular ingredients
+
+This project demonstrates practical usage of CRM-style management, inventory tracking, process automation, and dashboard reporting in a personal lifestyle application.
