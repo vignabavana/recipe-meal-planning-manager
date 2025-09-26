@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Recipes">
+        <template if:true={recipes}>
+            <lightning-datatable
+                key-field="Id"
+                data={recipes}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+
+            <!-- Optional: Button for each recipe to navigate -->
+            <template for:each={recipes} for:item="recipe">
+                <div key={recipe.Id} style="margin-top: 10px;">
+                    <lightning-button 
+                        label="View" 
+                        title="View Recipe" 
+                        onclick={viewRecipe} 
+                        data-id={recipe.Id}>
+                    </lightning-button>
+                </div>
+            </template>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <!-- Attribute to hold recipes -->
+    <aura:attribute name="recipes" type="List"/>
+    
+    <!-- Handler to call JS controller on init -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Display the recipes in a card -->
+    <lightning:card title="Recipes">
+        <aura:iteration items="{!v.recipes}" var="recipe">
+            <p>{!recipe.Name} (ID: {!recipe.Id})</p>
+        </aura:iteration>
+    </lightning:card>
+
+</aura:component>
